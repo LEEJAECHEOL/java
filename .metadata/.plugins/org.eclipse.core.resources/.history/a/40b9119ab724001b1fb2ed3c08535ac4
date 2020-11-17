@@ -1,0 +1,11 @@
+package ch02;
+
+class Zealot {
+	String name = "Zealot";
+	int attack = 10;
+	int armor = 5;
+}
+
+public class Var08 {
+
+}

@@ -1,0 +1,17 @@
+package ch04;
+
+public class Calculator {
+	void add(int n1, int n2) {
+		int rsult = n1 + n2;
+		
+	}
+	void minus(int n1, int n2) {
+		int result = n1- n2;
+	}
+	void divid(int n1, int n2) {
+		int result = n1 / n2;
+	}
+	void  multi(int n1, int n2) {
+		int result = n1 * n2;
+	}
+}

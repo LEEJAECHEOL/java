@@ -1,0 +1,9 @@
+package star1;
+
+class Marin {
+	// private  : 사적인
+	private String name;
+	private int hp;
+	private int attack;
+	
+}

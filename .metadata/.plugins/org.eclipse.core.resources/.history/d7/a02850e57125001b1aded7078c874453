@@ -1,0 +1,14 @@
+package ch04;
+
+
+class Cal {
+	
+}
+
+public class Method03 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

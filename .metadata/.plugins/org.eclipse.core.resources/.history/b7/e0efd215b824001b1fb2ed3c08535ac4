@@ -1,0 +1,16 @@
+package ch02;
+
+// heap
+class Zealot {
+	String name = "Zealot";
+	static int attack = 10;
+	int armor = 5;
+}
+
+public class Var08 {
+	public static void main(String arg[]) {
+		Zealot z = new Zealot();
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package ch02;
+
+
+// int, long, double, char, boolean, []배열, String
+
+
+public class Var06 {
+
+	public static void main(String[] args) {
+		// 자동차를 저장 (몇CC, 색깔, 종류)
+		
+	}
+
+}

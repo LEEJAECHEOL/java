@@ -1,0 +1,10 @@
+package ch02;
+
+class Zealot {
+	String name = "Zealot";
+	
+}
+
+public class Var08 {
+
+}

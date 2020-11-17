@@ -1,0 +1,18 @@
+package ch02;
+
+// class 자료형
+class Car {
+	int power = 2000;
+	String color = "white";
+	String name = "소나타";
+	String type = "승용차"; 
+}
+
+public class Var07 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

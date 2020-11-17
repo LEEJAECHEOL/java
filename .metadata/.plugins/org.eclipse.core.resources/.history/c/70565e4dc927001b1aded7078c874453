@@ -1,0 +1,9 @@
+package star1;
+
+public class star2App {
+
+	public static void main(String[] args) {
+		Marin m = new Marin();
+	}
+
+}

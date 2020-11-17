@@ -1,0 +1,17 @@
+package ch04;
+
+
+class Cal {
+	
+	void add(int n1, int n2) {
+		System.out.println(ni1 + n2);
+	}
+}
+
+public class Method03 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

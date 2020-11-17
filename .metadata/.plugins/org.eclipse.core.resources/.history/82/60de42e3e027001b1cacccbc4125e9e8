@@ -1,0 +1,40 @@
+package ch04;
+
+import java.util.Scanner;
+
+public class Example12 {
+
+	public static void main(String[] args) {
+		String[][] seat = {{"---", "---", "---", "---", "---", "---", "---", "---", "---", "---"},{"---", "---", "---", "---", "---", "---", "---", "---", "---", "---"},{"---", "---", "---", "---", "---", "---", "---", "---", "---", "---"}};
+		int reserve;
+		String name;
+		int seatGubun;
+		
+		String num;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("명품콘서트홀 예약 시스템입니다.");
+		while(true) {
+			System.out.print("예약 : 1, 조회 : 2, 취소 : 3, 끝내기 : 4");
+			reserve = sc.nextInt();
+			switch (reserve) {
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				
+				break;
+			case 4:
+				
+				break;
+
+			default:
+				break;
+			}
+		}
+	}
+
+}
