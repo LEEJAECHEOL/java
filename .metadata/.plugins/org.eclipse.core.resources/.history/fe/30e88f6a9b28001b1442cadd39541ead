@@ -1,0 +1,18 @@
+package star1;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+
+class Tank {
+	String name;
+	int hp;
+	int attack;
+	
+	
+}

@@ -1,0 +1,13 @@
+package login;
+
+
+public class FaceBook {
+	private String email = "ssar@nate.com";
+	private String password;
+	private String username;
+	
+	
+	public FaceBook() {
+		
+	}
+}

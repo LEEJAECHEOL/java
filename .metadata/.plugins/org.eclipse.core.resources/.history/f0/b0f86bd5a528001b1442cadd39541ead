@@ -1,0 +1,20 @@
+package login;
+
+
+// 사용자가 로그인할 때 -> 페이스북, 네이버
+public class LoginApp {
+	
+	static void userInfo(FaceBook f) {
+		System.out.println("로그인한 사용자는 ..." );
+		System.out.println(f.getEmail());
+		System.out.println(f.getPassword());
+		System.out.println(f.getUsername());
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FaceBook f = new FaceBook(); // 로그인하면 자동으로 만들어짐
+		userInfo(f);
+	}
+
+}

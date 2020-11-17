@@ -1,0 +1,25 @@
+
+package ch05;
+
+class Animal{
+	
+}
+class Dog {
+	
+}
+class Cat {
+	void sound() {
+		System.out.println("냐옹");
+	}
+}
+
+public class Inherit03 {
+	static void start (Dog d) {
+		d.sound;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

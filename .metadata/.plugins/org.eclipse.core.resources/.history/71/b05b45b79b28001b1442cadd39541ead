@@ -1,0 +1,39 @@
+package star1;
+
+class Zealot2 {
+	String name;
+	int hp;
+	int attack;
+}
+class Tank2 {
+	String name;
+	int hp;
+	int attack;
+	
+}
+class Scv2 {
+	private String name;
+	private int hp;
+	private int attack;
+	
+}
+
+class Dragon2 {
+	String name;
+	int hp;
+	int attack;
+	
+}
+
+class Marin {
+	private String name;
+	private int hp;
+	private int attack;
+}
+
+public class StarUnit {
+	
+	public static void main(String[] args) {
+		
+	}
+}

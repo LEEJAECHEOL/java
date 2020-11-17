@@ -1,0 +1,44 @@
+package login;
+
+
+public class FaceBook implements OAuth {
+	private String provider;
+	private String email;
+	private String password;
+	private String username;
+	
+	
+	public FaceBook() {
+		this("facebook", "ssar@nate.com", "1234", "깨봉");
+	}
+
+
+	public FaceBook(String provider, String email, String password, String username) {
+		super();
+		this.provider = provider;
+		this.email = email;
+		this.password = password;
+		this.username = username;
+	}
+
+
+	@Override
+	public String oAuthId() {
+		// TODO Auto-generated method stub
+		return this.email;
+	}
+
+	@Override
+	public String oAuthPassword() {
+		// TODO Auto-generated method stub
+		return this.password;
+	}
+
+	@Override
+	public String oAuthNick() {
+		// TODO Auto-generated method stub
+		return this.username;
+	}
+	
+	
+}

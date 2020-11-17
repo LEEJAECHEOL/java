@@ -1,0 +1,11 @@
+package star1;
+
+interface StarUnit {
+	abstract void attack();
+}
+
+public class StarUnit {
+	private String name;
+	private int hp;
+	private int attack;
+}

@@ -14,4 +14,7 @@
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="ch05.지구인"/>
+    <fullyQualifiedTypeName name="ch05.한국인"/>
+    <fullyQualifiedTypeName name="ch05.Inherit03"/>
 </qualifiedTypeNameHistroy>

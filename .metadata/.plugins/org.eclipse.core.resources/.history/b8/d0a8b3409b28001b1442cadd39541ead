@@ -1,0 +1,8 @@
+package star1;
+
+class Zealot {
+	private String name;
+	private int hp;
+	private int attack;
+	
+}

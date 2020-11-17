@@ -1,0 +1,8 @@
+package star1;
+
+public class StarUnit {
+	
+	public static void main(String[] args) {
+		
+	}
+}

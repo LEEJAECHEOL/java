@@ -1,0 +1,18 @@
+package star1;
+
+// 1. 질럿과 드라군 탱크 scv 다크 템플러  =>StarUnit 타입
+
+public class Star3App {
+	
+	public void attack(StarUnit u1, StarUnit u2) {
+
+		System.out.println(u1.getName() + " -> " + u2.getName() + " attck");
+		u2.setHp( u2.getHp() - u1.getAttack());
+		System.out.println(u2.getName() + " hp : " + u2.getHp());
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

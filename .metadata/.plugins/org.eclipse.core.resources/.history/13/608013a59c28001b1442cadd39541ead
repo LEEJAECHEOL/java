@@ -1,0 +1,12 @@
+package star1;
+
+interface StarUnit {
+	abstract void setHp();
+	abstract int getHp();
+	abstract int getAttck();
+}
+
+public class StarUnit {
+	
+	
+}
