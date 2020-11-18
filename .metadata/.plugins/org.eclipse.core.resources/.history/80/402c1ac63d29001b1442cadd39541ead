@@ -1,0 +1,20 @@
+package ch03;
+
+public class If01 {
+
+	public static void main(String[] args) {
+
+		// 표현식
+		if (true) {
+			System.out.println("true");
+		}
+		if(false) {
+			System.out.println("not execute");
+		}
+		int num = 5;
+		if(num > 1) {
+			System.out.println("num is biiget than 1");
+		}
+	}
+
+}

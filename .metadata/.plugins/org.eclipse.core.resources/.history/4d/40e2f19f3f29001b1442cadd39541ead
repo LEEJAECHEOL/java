@@ -1,0 +1,10 @@
+package ch03;
+
+public class Example16 {
+
+	public static void main(String[] args) {
+		String[] str = {"가위", "바위", "보"};
+		
+	}
+
+}

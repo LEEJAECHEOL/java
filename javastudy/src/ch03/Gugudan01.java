@@ -1,0 +1,16 @@
+package ch03;
+
+public class Gugudan01 {
+
+	public static void main(String[] args) {
+		// 구구단 2단을 출력하는 프로그램 만들어줴여!!
+		
+		for (int n1 = 2; n1 < 10; n1++) {
+			for (int i = 1; i < 10; i++) {
+				System.out.println(n1 + " x "+ i +"= " + (n1 * 1));
+			}
+			System.out.println();
+		}
+	}
+
+}

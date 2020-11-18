@@ -1,0 +1,32 @@
+package ch03;
+
+import java.util.Scanner;
+
+public class Example04 {
+
+	public static void main(String[] args) {
+		int a, b, c;
+		Scanner sc = new Scanner(System.in);
+		int result, max, min;
+		
+		System.out.print("정수 3개 입력 >> ");
+		a = sc.nextInt();
+		b = sc.nextInt();
+		c = sc.nextInt();
+		min = a < b ? a : b;
+		min = min < c ? min : c;
+		
+		max = a > b ? a : b;
+		max = max > c ? max : c;
+		
+		if(a == max) {
+			result = b < c ? c : b;
+		} else if (b == max) {
+			result = a < c ? c : a;
+		}else {
+			result = a < b ? b : a;
+		}
+		System.out.println("중간 값은 " + result);
+	}
+
+}
