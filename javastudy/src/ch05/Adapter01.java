@@ -1,0 +1,33 @@
+package ch05;
+
+// 인터페이스의 메서드 앞 default를 붙이면 몸체를 만들수 있다.
+interface Nife {
+	void cook();
+	void 	kill();
+}
+
+// 어댑터 용도
+abstract class CookerAdapter implements Nife {
+	public void kill() {
+		
+	}
+}
+
+class Cooker1 extends CookerAdapter {
+
+	@Override
+	public void cook() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+}
+
+public class Adapter01 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package composit;
+
+import lombok.Data;
+
+@Data	//getter setter
+
+public class ShrimpBurger extends Burger{
+	
+	public ShrimpBurger() {
+		this(2000, "새우버거");
+	}
+	public ShrimpBurger(int price, String desc) {
+		super(price, desc);
+	}
+}

@@ -1,0 +1,22 @@
+package ch04;
+class Job {
+	String name = "";
+}
+class Police extends Job {
+	String name = "경찰";
+}
+class Doctor extends Job {
+	String name ="의사";
+}
+
+public class Array02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Job[] jobs = { new Police(), new Police()};
+		
+		System.out.println(jobs[0].name);
+		System.out.println(jobs[1].name);
+	}
+
+}

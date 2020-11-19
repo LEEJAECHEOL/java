@@ -1,0 +1,8 @@
+package ch05;
+
+public class SportCan extends Car implements Controll {
+	private Strng name;
+	priavte Engine5000 engine5000
+	
+	
+}

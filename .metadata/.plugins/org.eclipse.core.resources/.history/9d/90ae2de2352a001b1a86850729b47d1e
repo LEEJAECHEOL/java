@@ -1,0 +1,6 @@
+package ch05;
+
+public class Genesis extends Car {
+	private String name;
+	Private Engine2000 engin2000;
+}

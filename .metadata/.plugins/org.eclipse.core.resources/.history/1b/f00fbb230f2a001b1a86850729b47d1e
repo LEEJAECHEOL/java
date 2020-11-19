@@ -1,0 +1,19 @@
+package ch04;
+
+class Police {
+	String name = "경찰";
+}
+class Doctor{
+	String name ="의사";
+}
+
+public class Array02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] names = { new Police().name, new Police().name};
+		
+		System.out.println(names[0]);
+	}
+
+}

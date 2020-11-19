@@ -1,0 +1,17 @@
+package composit;
+
+public class BurgerSet  {
+	private Burger burger;
+	private Potato potato;
+	private Coke coke;
+	
+	public BurgerSet(Burger burger, Potato potato, Coke coke) {
+		super();
+		this.burger = burger;
+		this.potato = potato;
+		this.coke = coke;
+	}
+	
+	
+
+}

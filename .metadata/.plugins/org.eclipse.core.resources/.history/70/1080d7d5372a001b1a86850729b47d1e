@@ -1,0 +1,14 @@
+package ch05;
+
+interface Nife {
+	void cook();
+	void 	kill();
+}
+
+public class Adapter01 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

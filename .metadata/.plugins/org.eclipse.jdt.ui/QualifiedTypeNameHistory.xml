@@ -17,4 +17,14 @@
     <fullyQualifiedTypeName name="ch05.지구인"/>
     <fullyQualifiedTypeName name="ch05.한국인"/>
     <fullyQualifiedTypeName name="ch05.Inherit03"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="ch05.Animal2"/>
+    <fullyQualifiedTypeName name="star1.StarUnit"/>
+    <fullyQualifiedTypeName name="star1.Zealot2"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="ch03.MyScanner"/>
+    <fullyQualifiedTypeName name="ch03.Example03"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,21 @@
+package ch04;
+
+class President {
+	String name;
+	
+	public President() {
+		
+	}
+}
+
+
+public class SingtoneApp {
+
+	public static void main(String[] args) {
+		President p1 = new President();
+		p1.name = "문재인";
+		President p2 = new President();
+		p2.name = "이재명";
+		}
+
+}

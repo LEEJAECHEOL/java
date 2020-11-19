@@ -1,0 +1,8 @@
+package composit;
+
+public class BurgerSet  {
+	private Burger burger;
+	private Potato potato;
+	private Coke coke;
+
+}

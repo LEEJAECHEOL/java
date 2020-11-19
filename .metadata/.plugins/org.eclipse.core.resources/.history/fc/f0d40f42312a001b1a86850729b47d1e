@@ -1,0 +1,15 @@
+package ch05;
+
+public class RedCloth extends Factory {
+
+	@Override
+	void 색칠() {
+		System.out.println("Blue color paint complete");
+	}
+
+}
+package ch05;
+
+public class RedCloth {
+
+}

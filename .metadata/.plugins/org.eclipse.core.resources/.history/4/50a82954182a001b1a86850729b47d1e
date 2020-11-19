@@ -1,0 +1,22 @@
+package ch04;
+
+class Car {
+	public Car() {
+		System.out.println("Car");
+	}
+}
+class Sonata extends Car {
+	public Sonata() {
+		super();
+		System.out.println("Sonata");
+	}
+}
+
+public class Super01 {
+
+	public static void main(String[] args) {
+		Sonata s = new Sonata();
+		
+	}
+
+}

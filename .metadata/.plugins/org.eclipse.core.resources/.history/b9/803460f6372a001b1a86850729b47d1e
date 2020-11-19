@@ -1,0 +1,18 @@
+package ch05;
+
+interface Nife {
+	void cook();
+	default void 	kill();
+}
+
+class Cooker implements Nife {
+
+}
+
+public class Adapter01 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

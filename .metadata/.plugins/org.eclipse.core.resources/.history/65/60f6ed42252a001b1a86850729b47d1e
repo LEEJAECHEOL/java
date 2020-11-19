@@ -1,0 +1,11 @@
+package composit;
+
+import lombok.Data;
+
+@Data
+
+public class Burger {
+	private int price;
+	private String desc;
+	
+}

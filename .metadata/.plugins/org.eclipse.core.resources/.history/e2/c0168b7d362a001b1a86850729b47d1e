@@ -1,0 +1,6 @@
+package ch05;
+
+public class Sonata extends Car implements Controll{
+	private String name;
+	private Engine2000 engin2000;
+}

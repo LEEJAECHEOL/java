@@ -1,0 +1,30 @@
+package ch05;
+
+interface Nife {
+	void cook();
+	void 	kill();
+}
+
+class Cooker implements Nife {
+
+	@Overrided
+	public void cook() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void kill() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+public class Adapter01 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
