@@ -1,0 +1,32 @@
+package ch07;
+
+import lombok.Data;
+
+@Data
+class ResponseDto {
+	private int statusCode;	// 200 (성공), 300 (다시요청), 400 (잘못된 요청)
+	private Object data;
+}
+
+class Dog {
+	String name = "hello";
+}
+
+public class Generic01 {
+
+	public static void main(String[] args) {
+		ResponseDto dto = new ResponseDto();
+		dto.setStatusCode(200);
+		dto.setData("apple");
+		dto.setData(new Dog());
+		
+		System.out.println(dto.getStatusCode());
+		Object b = new Dog();
+		Dog dd = (Dog)b;
+		
+		if(dto.getStatusCode() == 200) {
+			System.out.println(dto.getData());
+		}
+		
+	}
+}

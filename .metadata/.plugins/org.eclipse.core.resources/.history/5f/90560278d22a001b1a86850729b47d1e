@@ -1,0 +1,23 @@
+package ch06;
+
+public class Object03 {
+
+	public static void main(String[] args) {
+		String str1  = "홍길동";
+		String str2 = "홍길동";
+		// ==은 최소엑세스한 메모리 공간의 내용을 비교
+		System.out.println(str1 == str2);
+		
+		// string의 해시함수는 오버라이딩되서 같은 문자열이면 같은 해시를 뽑아낸다.
+		// 
+		String str3  = "임꺽정";
+		String str4 = new String("임꺽정");
+		String str5 = new String("임꺽");
+		System.out.println(str3.hashCode());
+		System.out.println(str4.hashCode());
+		System.out.println(str5.hashCode());
+		
+		System.out.println(str3 == str4);
+	}
+
+}

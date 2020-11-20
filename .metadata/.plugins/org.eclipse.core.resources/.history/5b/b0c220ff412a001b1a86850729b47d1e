@@ -1,0 +1,43 @@
+package makeStar;
+
+public class Unit {
+	private String tribe;	// 종족
+	private String name;
+	private int hp;
+	private int attack;
+	public Unit(String tribe, String name, int hp, int attack) {
+		super();
+		this.tribe = tribe;
+		this.name = name;
+		this.hp = hp;
+		this.attack = attack;
+	}
+	public Unit() {
+		// TODO Auto-generated constructor stub
+	}
+	public String getTribe() {
+		return tribe;
+	}
+	public void setTribe(String tribe) {
+		this.tribe = tribe;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getHp() {
+		return hp;
+	}
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+	public int getAttack() {
+		return attack;
+	}
+	public void setAttack(int attack) {
+		this.attack = attack;
+	}
+	
+}

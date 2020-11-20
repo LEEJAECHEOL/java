@@ -1,0 +1,11 @@
+package ch06;
+
+public class Wrapper01 {
+
+	public static void main(String[] args) {
+		// 기본 자료형은 함수를 가지고 있지 않다.
+		int num = 8;
+		
+	}
+
+}

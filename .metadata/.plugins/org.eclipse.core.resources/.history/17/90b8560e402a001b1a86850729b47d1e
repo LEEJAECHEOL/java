@@ -1,0 +1,10 @@
+package makeStar;
+
+public class Unit {
+	
+	private String tribe;	// 종족
+	private String name;
+	private int hp;
+	private int attack;
+	
+}

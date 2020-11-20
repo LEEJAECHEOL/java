@@ -1,0 +1,13 @@
+package ch07;
+
+class ResponseDto {
+	private int statusCode;	// 200 성공, 300 다시요청, 400 잘못된 요청
+}
+
+public class Generic01 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

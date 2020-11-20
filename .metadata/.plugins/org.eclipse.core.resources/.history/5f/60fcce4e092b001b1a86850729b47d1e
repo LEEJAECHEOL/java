@@ -1,0 +1,29 @@
+package jsonex;
+
+import com.google.gson.Gson;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+class Comment {
+	private int id;
+	private String name;
+	private String content;
+}
+
+public class Json01 {
+
+	public static void main(String[] args) {
+		// java -> json
+		Comment c = new Comment(1, "test", "comment1");
+		Gson g = new Gson();
+		String strJson = g.toJson(c);
+		System.out.println(srtJson);
+		// json -> java
+	}
+
+}
