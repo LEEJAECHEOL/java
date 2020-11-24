@@ -1,0 +1,15 @@
+package ch10;
+
+import javax.swing.JFrame;
+
+public class LoginScreen extends JFrame {
+
+	public LoginScreen() {
+		setTitle("Home");
+		setSize(400, 500);
+		
+		setVisible(true);
+	}
+
+
+}

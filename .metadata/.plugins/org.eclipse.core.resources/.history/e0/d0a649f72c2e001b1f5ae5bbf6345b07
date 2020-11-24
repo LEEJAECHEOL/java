@@ -1,0 +1,14 @@
+package ch10;
+
+import javax.swing.JFrame;
+
+public class HomeScreen extends JFrame {
+	
+	public HomeScreen() {
+		setTitle("Home");
+		setSize(400, 500);
+		
+		setVisible(true);
+	}
+
+}

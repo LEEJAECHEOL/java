@@ -1,0 +1,21 @@
+package ch10;
+
+import javax.swing.JFrame;
+
+public class HomeScreen extends JFrame {
+	private LoginScreen loginScreen;
+	private HomeScreen homeScreen = this;
+
+	public HomeScreen() {
+		setTitle("Home");
+		setSize(400, 500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setVisible(true);
+	}
+	public HomeScreen(LoginScreen loginScreen) {
+		this.loginScreen = loginScreen;
+		this();
+	}
+
+}

@@ -1,0 +1,16 @@
+package ch10;
+
+import javax.swing.JFrame;
+
+public class LoginScreen extends JFrame {
+
+	public LoginScreen() {
+		setTitle("Login");
+		setSize(400, 500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		setVisible(true);
+	}
+
+
+}

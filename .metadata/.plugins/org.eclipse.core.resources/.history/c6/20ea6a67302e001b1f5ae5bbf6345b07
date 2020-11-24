@@ -1,0 +1,26 @@
+package ch10;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class HomeScreen extends JFrame {
+	private LoginScreen loginScreen;
+	private HomeScreen homeScreen = this;
+	
+	private JLabel laUsername;
+	
+
+	public HomeScreen() {
+		this(null);
+	}
+	public HomeScreen(LoginScreen loginScreen) {
+		this.loginScreen = loginScreen;
+		laUsername =  new JLabel("Not Login");
+		setTitle("Home");
+		setSize(400, 500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package ch10;
+
+public class LoginScreen {
+
+	public LoginScreen() {
+		setTitle("Home");
+		setSize(400, 500);
+		
+		setVisible(true);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
