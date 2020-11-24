@@ -1,0 +1,17 @@
+package review;
+
+public class Ex08 {
+	
+	// void 리턴이 없다. add는 변수 이름 () 함수라는 뜻
+	// int n1, int n2 매개변수
+	void add(int n1, int n2) {
+		System.out.println(n1 + n2);
+	}
+	
+	public static void main(String[] args) {
+		Ex08 e = new Ex08();
+		e.add(10, 20);	// 함수 호출 (13라인에서 7 번 라인으로 점프 다시 13번 라인으로 돌아옴)
+		
+	}
+
+}

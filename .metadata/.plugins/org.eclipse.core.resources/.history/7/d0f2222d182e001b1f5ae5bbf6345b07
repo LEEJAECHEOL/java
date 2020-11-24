@@ -1,0 +1,14 @@
+package ch10;
+
+import javax.swing.JFrame;
+
+public class ClickAndDoubleClickEx extends JFrame {
+	public ClickAndDoubleClickEx() {
+		setTitle("Click And Double Click Example");
+	}
+	public static void main(String[] args) {
+		new ClickAndDoubleClickEx();
+		
+	}
+
+}

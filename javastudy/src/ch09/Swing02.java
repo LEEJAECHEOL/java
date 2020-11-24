@@ -1,0 +1,40 @@
+package ch09;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Swing02 extends JFrame{
+	public Swing02() {
+		setTitle("플로우 레이아웃");
+		setSize(300, 400);
+		
+		Container c = getContentPane();
+//		c.setLayout(new FlowLayout());
+		
+		JButton btn1 = new JButton("Button1");
+		JButton btn2 = new JButton("Button2");
+		JButton btn3 = new JButton("Button3");
+		JButton btn4 = new JButton("Button4");
+		JButton btn5 = new JButton("Button5");
+		
+		Container jp1 = new JPanel();
+		jp1.add(btn3);
+		jp1.add(btn4);
+		jp1.add(btn5);
+		
+		c.add(btn1, BorderLayout.NORTH);
+		c.add(btn2, BorderLayout.CENTER);
+		c.add(jp1, BorderLayout.SOUTH);
+		
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		new Swing02();
+	}
+
+}

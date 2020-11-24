@@ -1,0 +1,11 @@
+package ch09;
+
+import javax.swing.JPanel;
+
+public class Swing04 extends JPanel {
+
+	public Swing04() {
+
+	}
+
+}

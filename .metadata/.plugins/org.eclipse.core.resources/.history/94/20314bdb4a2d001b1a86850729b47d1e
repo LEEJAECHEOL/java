@@ -1,0 +1,9 @@
+package ch09;
+
+public enum MyLayout {
+	WEST("West"),
+	EAST("East"),
+	SOUTH("South"),
+	NORTH("North"),
+	\CENTER("Center");
+}

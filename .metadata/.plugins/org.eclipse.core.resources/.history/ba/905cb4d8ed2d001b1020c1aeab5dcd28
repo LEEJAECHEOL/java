@@ -1,0 +1,42 @@
+package ch10;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Event01 extends JFrame {
+	
+	private JButton btn1;
+	private JLabel la1;
+	
+	public Event01 () {
+		setTitle("event 01");
+		setSize(300, 400);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		btn1 = new JButton("Click me");
+		la1 = new JLabel("No click");
+		la1.setSize(100, 100);
+		la1.setFont(new Font("Serif", Font.BOLD, 50));
+		
+		// JFrame이 기본적으로 가지고 있는 JPanel에 접근하기 위해
+		Container c = getContentPane();
+		c.add(btn1, BorderLayout.SOUTH);
+		c.add(la1, BorderLayout.CENTER);
+		
+		// 1. 리스너 등록 (리스너 = 인터페이스(메서드 전달을 위해서))
+		btn1.addActionListener(l);
+		
+		// 2. JVM이 어떤 이벤트가 발생했는지를 확인
+		
+		setVisible(true);	// 생성자 제일마지막에
+	}
+	public static void main(String[] args) {
+		new Event01();
+	}
+
+}

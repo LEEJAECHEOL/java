@@ -1,0 +1,30 @@
+package ch10;
+
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Event01 extends JFrame {
+	
+	private JButton btn1;
+	private JLabel la1;
+	
+	public Event01 () {
+		setTitle("event 01");
+		setSize(300, 400);
+		
+		btn1 = new JButton("Click me");
+		la1 = new JLabel("No click");
+		
+		Container c = getContentPane();
+		
+		
+		setVisible(true);	// 생성자 제일마지막에
+	}
+	public static void main(String[] args) {
+		new Event01();
+	}
+
+}

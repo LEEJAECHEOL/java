@@ -1,0 +1,11 @@
+package ch10;
+
+public class OpenCallenge {
+	public OpenCallenge() {
+		
+	}
+	public static void main(String[] args) {
+		new OpenCallenge();
+	}
+
+}

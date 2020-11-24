@@ -1,0 +1,20 @@
+package review;
+
+class 저장소 {
+	void 다운로드() {
+		
+	}
+}
+
+public class Ex122 {
+
+	public static void main(String[] args) {
+		new A() {
+			@Override
+			public void add() {
+				System.out.println("add!!");
+			}
+		}.add();
+	}
+
+}

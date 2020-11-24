@@ -1,0 +1,7 @@
+package ch09;
+
+// 변수 : public static final 생략되어있음
+public interface Batch {
+	String EAST = "East";
+	
+}

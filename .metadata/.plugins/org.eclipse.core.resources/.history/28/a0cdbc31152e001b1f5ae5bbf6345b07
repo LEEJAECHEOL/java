@@ -1,0 +1,12 @@
+package ch10;
+
+public class FlyingTextEx {
+	public FlyingTextEx() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

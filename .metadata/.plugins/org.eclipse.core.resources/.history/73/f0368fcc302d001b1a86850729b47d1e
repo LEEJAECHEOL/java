@@ -1,0 +1,22 @@
+package review;
+
+interface Remocon {
+	void change();
+}
+
+class SamsungRemocon {
+	
+}
+
+class LGRemocon {
+
+}
+
+public class Ex12 {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

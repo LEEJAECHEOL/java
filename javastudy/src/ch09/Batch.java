@@ -1,0 +1,12 @@
+package ch09;
+
+// 실수 방지
+// 변수 : public static final 생략되어있음
+public interface Batch {
+	String EAST = "East";
+	String WEST = "West";
+	String SOUTH = "South";
+	String NORTH = "North";
+	String CENTER = "Center";
+	
+}

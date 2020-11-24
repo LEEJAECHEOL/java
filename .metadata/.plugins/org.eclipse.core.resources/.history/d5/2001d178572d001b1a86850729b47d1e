@@ -1,0 +1,29 @@
+package ch09;
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Swing03 extends JFrame {
+	public Swing03() {
+		setTitle("Open Challenge 9");
+		setSize(300,400);
+		Container c = getContentPane();
+		JPanel jp1 = new JPanel();
+		JPanel jp2 = new JPanel();
+		
+		jp1.setLayout(new FlowLayout());
+		jp1.add(new JButton("Open"));
+		jp1.add(new JButton("Read"));
+		jp1.add(new JButton("Close"));
+		
+		setVisible(true);
+	}
+	public static void main(String[] args) {	
+		new Swing03();
+	}
+
+}

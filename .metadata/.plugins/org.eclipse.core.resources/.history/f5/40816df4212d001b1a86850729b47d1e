@@ -1,0 +1,10 @@
+package review;
+
+public class Ex03 {
+
+	public static void main(String[] args) {
+		// 기본 자료형 = premitive type
+		
+	}
+
+}

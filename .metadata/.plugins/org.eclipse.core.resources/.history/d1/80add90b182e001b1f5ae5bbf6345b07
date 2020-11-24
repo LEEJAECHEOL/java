@@ -1,0 +1,12 @@
+package ch10;
+
+public class ClickAndDoubleClickEx {
+	public ClickAndDoubleClickEx() {
+		
+	}
+	public static void main(String[] args) {
+		new ClickAndDoubleClickEx();
+		
+	}
+
+}

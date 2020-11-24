@@ -1,0 +1,32 @@
+package review;
+
+interface Remocon {
+	void change();
+}
+
+class SamsungRemocon implements Remocon {
+
+	@Override
+	public void change() {
+		System.out.println("채널 변경");
+	}
+	
+}
+
+class LGRemocon implements Remocon {
+
+	@Override
+	public void change() {
+		System.out.println("채널 변경");
+	}
+	
+}
+
+public class Ex12 {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

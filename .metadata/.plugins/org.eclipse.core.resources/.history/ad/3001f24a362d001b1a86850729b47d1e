@@ -1,0 +1,17 @@
+package review;
+
+interface Helloable {
+	void 안녕();
+}
+
+public class Ex123 {
+	
+	static void start(Helloable h) {
+		h.안녕();
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

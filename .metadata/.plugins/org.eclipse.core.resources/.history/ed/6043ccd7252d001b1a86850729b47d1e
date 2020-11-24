@@ -1,0 +1,18 @@
+package review;
+
+/*
+ * 
+ * @author 이재철
+ * Static 은 메인이 시작하기 전에 메모리에로딩한다.
+ * 그 말은 static데이터는 중복 될 수 없음. 단 한번만 메모리에 로딩되기 때문!!
+ * 두개가 메모리에 뜰 수 없음 => static데이터는 공유될 수 있는 데이터
+ * 
+ * */
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

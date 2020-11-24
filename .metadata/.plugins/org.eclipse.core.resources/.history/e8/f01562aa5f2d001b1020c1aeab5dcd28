@@ -1,0 +1,53 @@
+package ch09;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+import java.awt.Color;
+import javax.swing.JLabel;
+
+public class Swing04 extends JFrame {
+	
+	private JPanel panelTop, panelCenter;
+	
+	public void initObject() {
+		
+	}
+
+	public Swing04() {
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.GRAY);
+		getContentPane().add(panel, BorderLayout.NORTH);
+		
+		JButton btnNewButton = new JButton("New button");
+		panel.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("New button");
+		panel.add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("New button");
+		panel.add(btnNewButton_2);
+		
+		JPanel panel_1 = new JPanel();
+		getContentPane().add(panel_1, BorderLayout.CENTER);
+		panel_1.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(358, 93, 61, 16);
+		panel_1.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setBounds(162, 31, 61, 16);
+		panel_1.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setBounds(19, 188, 61, 16);
+		panel_1.add(lblNewLabel_2);
+
+	}
+	public static void main(String[] args) {
+		
+	}
+}

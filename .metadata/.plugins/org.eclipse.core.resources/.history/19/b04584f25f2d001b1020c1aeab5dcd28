@@ -1,0 +1,57 @@
+package ch09;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+import java.awt.Color;
+import javax.swing.JLabel;
+
+public class Swing04 extends JFrame {
+	
+	private JPanel panelTop, panelCenter;
+	private JButton btnOpen, btnRead, btnClose;
+	
+	public void initObject() {
+		panelTop = new JPanel();
+		panelCenter = new JPanel();
+		btnOpen = new JButton("Open");
+		btnRead = new JButton("Read");
+		btnClose = new JButton("Close");
+	}
+	public void initSetting() {
+		panelTop.setBackground(Color.GRAY);
+		
+	}
+	public void initBatch() {
+		
+		getContentPane().add(panelTop, BorderLayout.NORTH);
+		panelTop.add(btnOpen);
+		panelTop.add(btnRead);
+		panelTop.add(btnClose);
+	}
+
+	public Swing04() {
+		
+		
+		JPanel panel_1 = new JPanel();
+		getContentPane().add(panel_1, BorderLayout.CENTER);
+		panel_1.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(358, 93, 61, 16);
+		panel_1.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setBounds(162, 31, 61, 16);
+		panel_1.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		lblNewLabel_2.setBounds(19, 188, 61, 16);
+		panel_1.add(lblNewLabel_2);
+
+	}
+	public static void main(String[] args) {
+		
+	}
+}

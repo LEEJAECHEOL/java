@@ -1,0 +1,21 @@
+package review;
+
+class 저장소 {
+	
+	String data;
+	
+	String 다운로드() {
+		data = "GTA5";
+		return data;
+	}
+}
+
+public class Ex122 {
+
+	public static void main(String[] args) {
+		저장소 s = new 저장소();
+		String game = s.다운로드();
+		System.out.println(game);
+	}
+
+}

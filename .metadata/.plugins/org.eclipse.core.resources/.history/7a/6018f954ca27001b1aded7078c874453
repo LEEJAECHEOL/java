@@ -1,9 +1,0 @@
-package star1;
-
-class Marin {
-	// 멤버변수 : 필드 : heep변수 : 전역변수 : 속성 : 프로퍼티          field, property 는 private로 만든다.  마법X
-	private String name;
-	private int hp;
-	private int attack;
-	
-}
