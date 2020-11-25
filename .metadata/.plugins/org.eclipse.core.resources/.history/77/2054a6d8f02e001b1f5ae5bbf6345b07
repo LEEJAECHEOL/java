@@ -1,0 +1,21 @@
+package ch13;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Example02 extends JFrame {
+	
+	public Example02() {
+		setTitle("Circle");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400, 400);
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

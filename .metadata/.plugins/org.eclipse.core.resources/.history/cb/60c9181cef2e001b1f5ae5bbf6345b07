@@ -1,0 +1,21 @@
+package ch13;
+
+import java.time.LocalDateTime;
+
+import javax.swing.JFrame;
+
+public class Example03 extends JFrame{
+	
+	public Example03() {
+		LocalDateTime now = LocalDateTime.now();
+		setTitle("digital clock");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(300,200);
+
+	}
+	public static void main(String[] args) {
+		new Example03();
+		
+	}
+
+}

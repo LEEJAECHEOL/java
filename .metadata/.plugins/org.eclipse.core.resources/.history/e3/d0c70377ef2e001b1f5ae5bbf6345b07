@@ -1,0 +1,42 @@
+package ch13;
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.time.LocalDateTime;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Example03 extends JFrame{
+	
+	public Example03() {
+		LocalDateTime now = LocalDateTime.now();
+		setTitle("digital clock");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(300,200);
+		
+		Container c = getContentPane();
+		c.setLayout(new FlowLayout());
+		JLabel hour = new JLabel(Integer.toString(now.getHour()));
+		hour.setFont(new Font("Gothic", Font.ITALIC, 80));
+
+		JLabel min = new JLabel(Integer.toString(now.getMinute()));
+		min.setFont(new Font("Gothic", Font.ITALIC, 80));
+
+		JLabel sec = new JLabel(Integer.toString(now.getSecond()));
+		sec.setFont(new Font("Gothic", Font.ITALIC, 80));
+		
+		c.add(hour);
+		c.add(min);
+		c.add(sec);
+		
+		setVisible(true);
+		
+	}
+	public static void main(String[] args) {
+		new Example03();
+		
+	}
+
+}

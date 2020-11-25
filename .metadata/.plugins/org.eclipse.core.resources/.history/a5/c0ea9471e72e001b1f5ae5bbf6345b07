@@ -1,0 +1,13 @@
+package ch13;
+
+import javax.swing.JFrame;
+
+public class ThreadTimeEx extends JFrame {
+	public ThreadTimeEx() {
+		setTitle("Thread를 상속받은 타이머 스레드 예제");
+	}
+	public static void main(String[] args) {
+		new ThreadTimeEx();
+	}
+
+}

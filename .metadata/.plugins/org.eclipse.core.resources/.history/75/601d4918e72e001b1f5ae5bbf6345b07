@@ -1,0 +1,17 @@
+package ch13;
+
+class NewThread extends Thread {
+	@Override
+	public void run() {
+		System.out.println("new thread");
+	}
+}
+
+public class Thread02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

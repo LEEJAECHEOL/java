@@ -1,0 +1,11 @@
+package ch07;
+
+public class Hash01 {
+
+	public static void main(String[] args) {
+		// 해시맵은 key, value로 값을 입력할 수 있음.
+		// 찾을 때는 key값으로 찾을 수 있음.
+		
+	}
+
+}

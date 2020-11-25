@@ -1,0 +1,17 @@
+package ch13;
+
+public class Thread01 {
+
+	public static void main(String[] args) {
+		System.out.println("main Thread 실행됨");
+		for (int i = 0; i < 10; i++) {
+			try {
+				System.out.println("main : " + i);
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

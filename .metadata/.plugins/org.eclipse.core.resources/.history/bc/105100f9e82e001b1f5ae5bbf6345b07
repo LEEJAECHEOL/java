@@ -1,0 +1,16 @@
+package ch13;
+
+import javax.swing.JFrame;
+
+public class FlickeringLabelEx extends JFrame {
+	
+	public FlickeringLabelEx() {
+		setTitle("FlickeringLabel Example");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new FlickeringLabelEx();
+	}
+
+}

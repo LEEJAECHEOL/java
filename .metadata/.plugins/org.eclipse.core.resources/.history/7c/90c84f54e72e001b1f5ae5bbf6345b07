@@ -1,0 +1,11 @@
+package ch13;
+
+public class ThreadTimeEx {
+	public ThreadTimeEx() {
+		
+	}
+	public static void main(String[] args) {
+		new ThreadTimeEx();
+	}
+
+}

@@ -1,0 +1,10 @@
+package coffee;
+
+// 고객
+// 책임 = 메뉴 주문
+public class Customer {
+
+	public void order() {
+		
+	}
+}

@@ -1,0 +1,6 @@
+package coffee;
+
+// 커피
+public class Coffee {
+
+}

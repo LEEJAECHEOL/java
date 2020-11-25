@@ -1,0 +1,50 @@
+package ch13;
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+class FlickeringLabel extends JLabel implements Runnable{
+	private long delay;
+	
+	
+
+	public FlickeringLabel(String text, long delay) {
+		super(text);
+		this.delay = delay;
+		setOpaque(true);
+		
+		Thread th = new Thread(this);
+		th.start();
+	}
+
+
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+public class FlickeringLabelEx extends JFrame {
+	
+	public FlickeringLabelEx() {
+		setTitle("FlickeringLabel Example");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+		c.setLayout(new FlowLayout());
+		
+		
+				
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new FlickeringLabelEx();
+	}
+
+}

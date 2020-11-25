@@ -1,0 +1,7 @@
+package coffee;
+
+// 커피
+// 책임 = 없
+public class Coffee {
+
+}
