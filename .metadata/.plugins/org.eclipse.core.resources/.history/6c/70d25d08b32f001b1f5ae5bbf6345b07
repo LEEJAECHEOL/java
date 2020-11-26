@@ -1,0 +1,21 @@
+package ch11;
+
+import javax.swing.ImageIcon;
+
+public class ListEx {
+	private String [] fruits = {"apple", "banana", "kiwi", "mango", "pear", "peach", "berry", "strawberry", "blckberry"};
+	private ImageIcon imges = {
+			new ImageIcon("images/heart.png"),
+			new ImageIcon("images/heart2.png"),
+			new ImageIcon("images/heart.png"),
+	};
+	
+	public ListEx() {
+		
+		
+	}
+	public static void main(String[] args) {
+		new ListEx();
+	}
+
+}

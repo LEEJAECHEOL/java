@@ -1,0 +1,80 @@
+package ch11;
+
+
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class CheckBoxItemEventEx extends JFrame{
+	private JCheckBox [] fruits = new JCheckBox[3];
+	private String [] names = {"사과", "배", "체리"};
+	private JLabel sumLabel;
+	
+	class MyItemListener implements ItemListener {
+		private int sum = 0;
+
+		@Override
+		public void itemStateChanged(ItemEvent e) {
+			if(e.getStateChange() == ItemEvent.SELECTED) {
+				if(e.getItem() == fruits[0]) {
+					sum += 100;
+				} else if(e.getItem() == fruits[1]) {
+					sum += 500;
+				}else {
+					sum += 2000;
+				}
+			}else {
+				if(e.getItem() == fruits[0]) {
+					sum -= 100;
+				} else if(e.getItem() == fruits[1]) {
+					sum -= 500;
+				}else {
+					sum -= 2000;
+				}
+			}
+		}
+		
+	}
+	
+	public CheckBoxItemEventEx() {
+		setTitle("체크박스와 ItemEvent 예제");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container c = getContentPane();
+		c.setLayout(new FlowLayout());
+		
+		c.add(new JLabel("사과 100원, 배 500원, 체리 2000원"));
+		
+		
+		
+		ImageIcon icon1 = new ImageIcon("images/heart.png");
+		ImageIcon icon2 = new ImageIcon("images/heart2.png");
+		
+		JCheckBox apple = new JCheckBox("apple");
+		JCheckBox pear = new JCheckBox("pear", true);
+		JCheckBox cherry = new JCheckBox("cherry", icon1);
+		
+		cherry.setBorderPainted(true);
+		cherry.setSelectedIcon(icon2);
+		
+		c.add(apple);
+		c.add(pear);
+		c.add(cherry);
+		
+		setSize(250, 150);
+		setVisible(true);
+		
+	}
+	
+
+	public static void main(String[] args) {
+		new CheckBoxItemEventEx();
+	}
+
+}

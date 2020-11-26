@@ -1,0 +1,21 @@
+package ch11;
+
+import javax.swing.ImageIcon;
+
+public class ComboActionEx {
+	private String [] fruits = {"apple", "banana", "kiwi", "mango"};
+	private ImageIcon [] imges = {
+			new ImageIcon("images/heart.png"),
+			new ImageIcon("images/heart2.png")
+	};
+	
+	
+	public ComboActionEx() {
+		
+	}
+	
+	public static void main(String[] args) {
+		new ComboActionEx();
+	}
+
+}

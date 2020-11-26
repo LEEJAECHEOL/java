@@ -1,0 +1,16 @@
+package com;
+
+import java.net.URL;
+
+public class Com01 {
+
+	public static void main(String[] args) {
+		try {
+			URL url = new URL("https://www.naver.com");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

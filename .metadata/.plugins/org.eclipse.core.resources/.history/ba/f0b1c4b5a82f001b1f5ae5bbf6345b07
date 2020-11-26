@@ -1,0 +1,11 @@
+package ch11;
+
+public class LabelEx {
+	public LabelEx() {
+		
+	}
+	public static void main(String[] args) {
+		new LabelEx();
+	}
+
+}

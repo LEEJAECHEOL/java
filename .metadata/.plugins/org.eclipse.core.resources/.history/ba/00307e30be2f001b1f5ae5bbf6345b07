@@ -1,0 +1,24 @@
+package ch11;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+public class ComboActionEx {
+	private String [] fruits = {"apple", "banana", "kiwi", "mango"};
+	private ImageIcon [] images = {
+			new ImageIcon("images/heart.png"),
+			new ImageIcon("images/heart2.png"),
+			new ImageIcon("images/heart.png"),
+			new ImageIcon("images/heart2.png")
+	};
+	private JLabel imgLabel = new JLabel(images[0]);
+	
+	public ComboActionEx() {
+		
+	}
+	
+	public static void main(String[] args) {
+		new ComboActionEx();
+	}
+
+}
