@@ -7,6 +7,10 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
+import com.google.gson.Gson;
+
+import protocol.RequestDto;
+
 public class MyClientSocket4 {
 	
 	private Socket socket;
@@ -27,7 +31,20 @@ public class MyClientSocket4 {
 			while(true) {
 				//ALL : 안녕, MSG:ssar1:안녕
 				String keyboard = sc.nextLine();
-				writer.println(keyboard);
+				// json으로 파싱
+				RequestDto dto = new RequestDto();
+				String[] gubun = keyboard.split(":");
+				if(gubun.length == 2) {
+					dto.setGubun(gubun[0]);
+					dto.setMsg(gubun[1]);
+				}else if(gubun.length == 3) {
+					dto.setGubun(gubun[0]);
+					dto.setId(gubun[1]);
+					dto.setMsg(gubun[2]);
+				}
+				Gson gson = new Gson();
+				String jsonData = gson.toJson(dto);
+				writer.println(jsonData);
 				writer.flush();
 			}
 			

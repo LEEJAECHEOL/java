@@ -1,14 +1,16 @@
 package server;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Vector;
 
+import com.google.gson.Gson;
+
 import protocol.Chat;
+import protocol.RequestDto;
 
 public class MyServerSocket4 {
 	private ServerSocket serverSocket;
@@ -42,13 +44,9 @@ public class MyServerSocket4 {
 		private String id;
 		private BufferedReader reader;
 		private PrintWriter writer;
-		private String roomName;
 		
 		public void setID(String id) {
 			this.id = id;
-		}
-		public void setRoomName(String roomName) {
-			this.roomName = roomName;
 		}
 
 		public SocketThread(Socket socket) {
@@ -65,7 +63,9 @@ public class MyServerSocket4 {
 				while((input = reader.readLine()) != null) {
 					// 전체 메시지 보내기
 					// Routing (라우팅 추가)
-					routing(input);
+					Gson gson = new Gson();
+					RequestDto dto = gson.fromJson(input, RequestDto.class);
+					routing(dto);
 					
 				}
 				
@@ -74,9 +74,8 @@ public class MyServerSocket4 {
 			}
 			
 		}
-		private void routing(String input) {
-			String[] gubun = input.split(":");
-			if(gubun[0].equals(Chat.ALL)) {
+		private void routing(RequestDto dto) {
+			if(dto.getGubun().equals(Chat.ALL)) {
 				for (int i = 0; i < vc.size(); i++) {
 					if(vc.get(i) == this && vc.get(i).id == null) {
 						vc.get(i).writer.println("아이디를 생성 후 메세지를 입력할 수 있습니다.\n 아이디 생성 방법(ID:사용할 아이디)");
@@ -84,13 +83,13 @@ public class MyServerSocket4 {
 						break;
 					}
 					if(vc.get(i) != this) {
-						vc.get(i).writer.println(id + "-->" + input);
+						vc.get(i).writer.println(id + "-->" + dto.getMsg());
 						vc.get(i).writer.flush();
 					}
 				}
-			} else if(gubun[0].equals(Chat.MSG)){
-				String tempId = gubun[1];
-				String tempMsg = gubun[2];
+			} else if(dto.getGubun().equals(Chat.MSG)){
+				String tempId = dto.getId();
+				String tempMsg = dto.getMsg();
 				boolean check = false;
 				for (int i = 0; i < vc.size(); i++) {
 					if(vc.get(i).id == null) {
@@ -106,8 +105,8 @@ public class MyServerSocket4 {
 						this.writer.println("상대방의 아이디가 없습니다.");
 						this.writer.flush();
 				}
-			} else if(gubun[0].equals(Chat.ID)) {
-				String tempId = gubun[1];
+			} else if(dto.getGubun().equals(Chat.ID)) {
+				String tempId = dto.getMsg();
 				setID(tempId);
 			} 
 		}
